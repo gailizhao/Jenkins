@@ -1,0 +1,21 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Build Stage for Gaili') {
+            steps {
+                echo 'Building'
+            }
+        }
+        stage('Security Scane Stage for Gaili') {
+            steps {
+                echo 'Scanning'
+            }
+        }
+        stage('Test Stage for Gaili') {
+            steps {
+                echo 'Testing'
+            }
+        }          
+    }
+}
